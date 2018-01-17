@@ -1,0 +1,86 @@
+<div class="wrapper">
+  <div class="auth-wrapper login-section">
+    <div class="green-blue-gradient">
+      <div class="container">
+        <div class="row">
+          <div class="auth-container">
+            <div class="logo-auth">
+              <a href="" title="funnel"><img src="/assets/img/logo.png" alt="funnel"></a>
+            </div>
+            <div class="auth-box">
+              <div class="padding-25">
+                <form>
+                  <div class="auth-content">
+                    <h1>Funnelting</h1>
+                    <p class="sub-title">Vul hieronder uw wachtwoord en gebruikersnaam in.</p>
+                  </div>
+                  <div class="notification-bar notification-bar-red margin-bottom-25" ng-show="log.errorMessage">
+                    <i class="fa fa-exclamation circle-excl"></i> [{log.errorMessage}]
+                  </div>
+                  <div class="form-field margin-bottom-10">
+                    <input type="text"
+                           ng-model="log.username"
+                           placeholder="Gebruikersnaam"
+                           class="form-controll custom-field block-width">
+
+                  </div>
+                  <div class="margin-bottom-25">
+                    <div class="customCheck-wrap">
+                      <input type="checkbox" id="rememberme"/>
+                      <label for="rememberme">0nthoud mijn gebruikersnaam</label>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <div class="form-field-wrap">
+                      <input type="password"
+                             ng-model="log.password"
+                             placeholder="Wachtwoord"
+                             class="form-controll custom-field block-width">
+                      <i class="filed-icon"> <img src="assets/img/svg/reveal_LightGrey.svg" alt=""> </i>
+                    </div>
+                  </div>
+                  <p class="margin-bottom-25"><a class="blue-link" ui-sref="forgetPassword">Ik ben mijn wachtwoord
+                    vergeten</a></p>
+
+                  <div class="login-button-section">
+                    <button type="submit" class="button-default button-mid block-width" ng-click="log.login()">
+                      Inloggen
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal section -->
+  <!-- <div class="modal-section" ng-show="resetPassword">
+      <div class="modal-container modal-mid">
+          <span class="modal-close" ng-click="resetPassword = false"><img src="assets/img/svg/close.svg" alt=""></span>
+          <div class="auth-box">
+              <div class="padding-25">
+                  <form action="">
+                      <div class="auth-content">
+                          <h1>Wachtwoord vergeten</h1>
+                          <p class="sub-title">Vul hieronder je e-mailadres in. We sturen dan binnen enkele minuten een e-mail waarmee een nieuw
+                              wachtwoord kan worden aangemaakt.</p>
+                      </div>
+                      <div class="form-field">
+                          <label class="field-caption">E-mailadres</label>
+                          <input type="text" placeholder="E-mailadres" class="form-controll custom-field block-width">
+                      </div>
+
+                      <div class="login-button-section">
+                          <button type="submit" class="button-default button-mid block-width">Verzenden</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="modal-overlay" ng-click="resetPassword = false">&nbsp;</div>
+  </div> -->
+  <!-- Modal section -->
+</div>
